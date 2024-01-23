@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.sleeping.SleepPageFragment">
+
+
+    <TextView
+        android:id="@+id/sleepPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/home_sleeping_button_text"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/textSize5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sleepBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleepPageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sleepPageTitle"
+        app:srcCompat="@drawable/back_btn" />
+
+    <View
+        android:id="@+id/fellSleepEditText"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepPageTitle" />
+
+    <TextView
+        android:id="@+id/tvFellSleep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="20dp"
+        android:background="@null"
+        android:hint="@string/fell_sleep_hint"
+        android:textAppearance="@style/input"
+        app:layout_constraintBottom_toBottomOf="@id/fellSleepEditText"
+        app:layout_constraintEnd_toEndOf="@id/fellSleepEditText"
+        app:layout_constraintStart_toStartOf="@id/fellSleepEditText"
+        app:layout_constraintTop_toTopOf="@+id/fellSleepEditText" />
+
+    <View
+        android:id="@+id/wokeUpEditText"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fellSleepEditText" />
+
+    <TextView
+        android:id="@+id/tvWokeUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="20dp"
+        android:background="@null"
+        android:hint="@string/woke_up_hint"
+        android:textAppearance="@style/input"
+        app:layout_constraintBottom_toBottomOf="@id/wokeUpEditText"
+        app:layout_constraintEnd_toEndOf="@id/wokeUpEditText"
+        app:layout_constraintStart_toStartOf="@id/wokeUpEditText"
+        app:layout_constraintTop_toTopOf="@+id/wokeUpEditText" />
+
+    <EditText
+        android:id="@+id/noteEditText"
+        android:layout_width="0dp"
+        android:layout_height="264dp"
+        android:layout_marginHorizontal="@dimen/margin27"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/custom_edittext_background"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:gravity="top|start"
+        android:hint="@string/note_hint"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/padding3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wokeUpEditText" />
+
+    <Button
+        android:id="@+id/sleepSaveButton"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="@dimen/margin27"
+        android:text="@string/button_save_text"
+        android:textSize="@dimen/textSize4"
+        app:backgroundTint="@null"
+        android:background="@drawable/onboarding_button"
+        android:layout_marginBottom="@dimen/margin20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/loadingScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#825E5E5E"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/savedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saved_text"
+        android:textAppearance="@style/saved"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

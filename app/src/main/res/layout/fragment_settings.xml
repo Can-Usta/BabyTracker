@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/settingsPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/setting_page_title"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/textSize5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/settingsBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsPageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingsPageTitle"
+        app:srcCompat="@drawable/back_btn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/premiumButton"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/title_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="24dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsPageTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnGetPremiumConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/img_premium_icon"
+                app:layout_constraintBottom_toBottomOf="@id/btnGetPremiumConstraint"
+                app:layout_constraintStart_toStartOf="@+id/btnGetPremiumConstraint"
+                app:layout_constraintTop_toTopOf="@id/btnGetPremiumConstraint" />
+
+            <TextView
+                android:id="@+id/tvPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/get_premium_text"
+                android:textAppearance="@style/save"
+                app:layout_constraintBottom_toBottomOf="@id/btnGetPremiumConstraint"
+                app:layout_constraintStart_toEndOf="@+id/imgPremium"
+                app:layout_constraintTop_toTopOf="@id/btnGetPremiumConstraint" />
+
+            <ImageView
+                android:id="@+id/imgRightPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/symptoms_btn"
+                app:layout_constraintBottom_toBottomOf="@id/btnGetPremiumConstraint"
+                app:layout_constraintEnd_toEndOf="@id/btnGetPremiumConstraint"
+                app:layout_constraintTop_toTopOf="@id/btnGetPremiumConstraint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/btnRate"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premiumButton" />
+
+    <ImageView
+        android:id="@+id/imgRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/img_rate"
+        android:layout_marginEnd="@dimen/margin4"
+        app:layout_constraintBottom_toBottomOf="@id/btnRate"
+        app:layout_constraintEnd_toStartOf="@id/tvRate"
+        app:layout_constraintStart_toStartOf="@+id/btnRate"
+        app:layout_constraintTop_toTopOf="@id/btnRate" />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/rate_us_text"
+        android:textAppearance="@style/settings_titles"
+        app:layout_constraintBottom_toBottomOf="@id/btnRate"
+        app:layout_constraintStart_toEndOf="@+id/imgRate"
+        app:layout_constraintTop_toTopOf="@id/btnRate" />
+
+    <ImageView
+        android:id="@+id/imgRightRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin4"
+        android:src="@drawable/symptoms_btn"
+        app:layout_constraintBottom_toBottomOf="@id/btnRate"
+        app:layout_constraintEnd_toEndOf="@id/btnRate"
+        app:layout_constraintTop_toTopOf="@id/btnRate" />
+
+    <View
+        android:id="@+id/btnTerms"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRate" />
+
+    <ImageView
+        android:id="@+id/imgTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/img_terms"
+        android:layout_marginEnd="@dimen/margin4"
+        app:layout_constraintEnd_toStartOf="@id/tvTerms"
+        app:layout_constraintBottom_toBottomOf="@id/btnTerms"
+        app:layout_constraintStart_toStartOf="@+id/btnTerms"
+        app:layout_constraintTop_toTopOf="@id/btnTerms" />
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/term_of_use_text"
+        android:textAppearance="@style/settings_titles"
+        app:layout_constraintBottom_toBottomOf="@id/btnTerms"
+        app:layout_constraintStart_toEndOf="@+id/imgTerms"
+        app:layout_constraintTop_toTopOf="@id/btnTerms" />
+
+    <ImageView
+        android:id="@+id/imgRightTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/symptoms_btn"
+        app:layout_constraintBottom_toBottomOf="@id/btnTerms"
+        app:layout_constraintEnd_toEndOf="@id/btnTerms"
+        app:layout_constraintTop_toTopOf="@id/btnTerms" />
+
+    <View
+        android:id="@+id/btnPrivacy"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTerms" />
+
+    <ImageView
+        android:id="@+id/imgPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/img_privacy"
+        app:layout_constraintEnd_toStartOf="@id/tvPrivacy"
+        android:layout_marginEnd="@dimen/margin4"
+        app:layout_constraintBottom_toBottomOf="@id/btnPrivacy"
+        app:layout_constraintStart_toStartOf="@+id/btnPrivacy"
+        app:layout_constraintTop_toTopOf="@id/btnPrivacy" />
+
+    <TextView
+        android:id="@+id/tvPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/privacy_policy_text"
+        android:textAppearance="@style/settings_titles"
+        app:layout_constraintBottom_toBottomOf="@id/btnPrivacy"
+        app:layout_constraintStart_toEndOf="@+id/imgPrivacy"
+        app:layout_constraintTop_toTopOf="@id/btnPrivacy" />
+
+    <ImageView
+        android:id="@+id/imgRightPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/symptoms_btn"
+        app:layout_constraintBottom_toBottomOf="@id/btnPrivacy"
+        app:layout_constraintEnd_toEndOf="@id/btnPrivacy"
+        app:layout_constraintTop_toTopOf="@id/btnPrivacy" />
+
+    <View
+        android:id="@+id/btnContact"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrivacy" />
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/img_contact"
+        app:layout_constraintEnd_toStartOf="@id/tvContact"
+        android:layout_marginEnd="@dimen/margin4"
+        app:layout_constraintBottom_toBottomOf="@id/btnContact"
+        app:layout_constraintStart_toStartOf="@+id/btnContact"
+        app:layout_constraintTop_toTopOf="@id/btnContact" />
+
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/contact_us_text"
+        android:textAppearance="@style/settings_titles"
+        app:layout_constraintBottom_toBottomOf="@id/btnContact"
+        app:layout_constraintStart_toEndOf="@+id/imgPrivacy"
+        app:layout_constraintTop_toTopOf="@id/btnContact" />
+
+    <ImageView
+        android:id="@+id/imgRightContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/symptoms_btn"
+        app:layout_constraintBottom_toBottomOf="@id/btnContact"
+        app:layout_constraintEnd_toEndOf="@id/btnContact"
+        app:layout_constraintTop_toTopOf="@id/btnContact" />
+
+    <View
+        android:id="@+id/btnRestore"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContact" />
+
+    <ImageView
+        android:id="@+id/imgRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toStartOf="@id/tvRestore"
+        android:layout_marginEnd="@dimen/margin4"
+        android:src="@drawable/img_restore"
+        app:layout_constraintBottom_toBottomOf="@id/btnRestore"
+        app:layout_constraintStart_toStartOf="@+id/btnRestore"
+        app:layout_constraintTop_toTopOf="@id/btnRestore" />
+
+    <TextView
+        android:id="@+id/tvRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/restore_purchase_text"
+        android:textAppearance="@style/settings_titles"
+        app:layout_constraintBottom_toBottomOf="@id/btnRestore"
+        app:layout_constraintStart_toEndOf="@+id/imgRestore"
+        app:layout_constraintTop_toTopOf="@id/btnRestore" />
+
+    <ImageView
+        android:id="@+id/imgRightRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/symptoms_btn"
+        app:layout_constraintBottom_toBottomOf="@id/btnRestore"
+        app:layout_constraintEnd_toEndOf="@id/btnRestore"
+        app:layout_constraintTop_toTopOf="@id/btnRestore" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

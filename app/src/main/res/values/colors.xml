@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#DBE311</color>
+    <color name="feeding_home_button">#9B64FF</color>
+    <color name="sleeping_home_button">#635AFF</color>
+    <color name="title_color">#4625C3</color>
+    <color name="cardview_background">#F3F3F3</color>
+    <color name="text_color">#FAFAFA</color>
+    <color name="text_color_black">#010101</color>
+
+    <color name="gradient_start">#8A3AF8</color>
+    <color name="gradient_end">#547EFF</color>
+
+
+    <color name="viewpager_color">#FAFAFA</color>
+    <color name="text_color_1">#000000</color>
+    <color name="edittext_background_color">#F3F3F3</color>
+    <color name="transparent">#00000000</color>
+    <color name="card_background">#F3F3F3</color>
+
+
+</resources>

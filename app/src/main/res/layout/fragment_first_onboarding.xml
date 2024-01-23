@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.onboarding.FirstOnboardingFragment"
+    android:backgroundTint="@color/white">
+
+
+    <ImageView
+        android:id="@+id/firstOnboardingBackgroundIV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/onboarding_first_image1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <View
+        android:id="@+id/viewWhiteOverlayFirstOnboarding"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/onboarding_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="H,1.1:1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/firstOnboardingTitleTV"
+        style="@style/onboarding_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin8"
+        android:layout_marginTop="@dimen/margin10"
+        android:gravity="center"
+        android:text="@string/first_onboarding_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewWhiteOverlayFirstOnboarding" />
+
+    <TextView
+        android:id="@+id/firstOnboardingDescriptionTV"
+        style="@style/onboarding_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin12"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginEnd="@dimen/margin11"
+        android:gravity="center"
+        android:text="@string/first_onboarding_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstOnboardingTitleTV" />
+
+    <ImageView
+        android:id="@+id/firstOnboardingSliderIV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstOnboardingDescriptionTV"
+        app:srcCompat="@drawable/slider_image_first" />
+
+    <Button
+        android:id="@+id/firstOnboardingButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/save_button_height"
+        android:layout_marginBottom="@dimen/margin26"
+        android:layout_marginHorizontal="@dimen/margin12"
+        android:layout_marginTop="@dimen/margin13"
+        android:background="@drawable/onboarding_button"
+        android:text="@string/onboarding_button_text"
+        android:textSize="@dimen/textSize4"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/firstOnboardingBackgroundIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstOnboardingSliderIV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

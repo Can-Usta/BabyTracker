@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="8dp"
+    android:checkable="true"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardCornerRadius="24dp"
+    app:strokeWidth="2dp"
+    app:checkedIcon="@null"
+    app:checkedIconTint="@null"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_marginHorizontal="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imgSymptom"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            tools:src="@drawable/img_rush" />
+
+        <TextView
+            android:id="@+id/tvSymptomsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:textAppearance="@style/symptoms_name"
+            tools:text="Nausea" />
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

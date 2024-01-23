@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/homeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_text"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/textSize2"
+        app:layout_constraintEnd_toStartOf="@+id/calenderImageButton"
+        app:layout_constraintStart_toEndOf="@+id/settingsImageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingsImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_settings_svg"
+        android:layout_marginStart="@dimen/margin19"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/homeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/homeFeedingButton"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="@dimen/margin1"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/img_purple"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/home_feeding_button_text"
+        android:textAppearance="@style/home_titles"
+        app:layout_constraintBottom_toBottomOf="@+id/homeFeedingButton"
+        app:layout_constraintStart_toEndOf="@+id/feedingBottleImageView"
+        app:layout_constraintTop_toTopOf="@+id/homeFeedingButton" />
+
+    <ImageView
+        android:id="@+id/calenderImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin19"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/home_calendar_svg"
+        app:layout_constraintBottom_toBottomOf="@+id/homeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/feedingBottleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin16"
+        android:src="@drawable/feeding_bottle_svg"
+        app:layout_constraintBottom_toBottomOf="@+id/homeFeedingButton"
+        app:layout_constraintStart_toStartOf="@+id/homeFeedingButton"
+        app:layout_constraintTop_toTopOf="@+id/homeFeedingButton" />
+
+    <View
+        android:id="@+id/homeSleepingButton"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="@dimen/margin1"
+        android:background="@drawable/img_blue"
+        android:layout_marginTop="@dimen/margin6"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeFeedingButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/home_sleeping_button_text"
+        android:textAppearance="@style/home_titles"
+        app:layout_constraintBottom_toBottomOf="@+id/homeSleepingButton"
+        app:layout_constraintStart_toEndOf="@+id/sleepingImageView"
+        app:layout_constraintTop_toTopOf="@+id/homeSleepingButton" />
+
+    <ImageView
+        android:id="@+id/sleepingImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sleeping_icon_svg"
+        android:layout_marginStart="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin16"
+        app:layout_constraintBottom_toBottomOf="@+id/homeSleepingButton"
+        app:layout_constraintStart_toStartOf="@+id/homeSleepingButton"
+        app:layout_constraintTop_toTopOf="@+id/homeSleepingButton" />
+
+    <View
+        android:id="@+id/homeSymptomsButton"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin6"
+        android:background="@drawable/img_orange"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeSleepingButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/home_symptoms_button_text"
+        android:textAppearance="@style/home_titles"
+        app:layout_constraintBottom_toBottomOf="@+id/homeSymptomsButton"
+        app:layout_constraintStart_toEndOf="@+id/symptomsImageView"
+        app:layout_constraintTop_toTopOf="@+id/homeSymptomsButton" />
+
+    <ImageView
+        android:id="@+id/symptomsImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin15"
+        android:src="@drawable/symptomps_icon_svg"
+        app:layout_constraintBottom_toBottomOf="@+id/homeSymptomsButton"
+        app:layout_constraintStart_toStartOf="@+id/homeSymptomsButton"
+        app:layout_constraintTop_toTopOf="@+id/homeSymptomsButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

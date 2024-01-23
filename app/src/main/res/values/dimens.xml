@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding1">24dp</dimen>
+    <dimen name="padding2">15dp</dimen>
+    <dimen name="padding3">20dp</dimen>
+
+    <dimen name="textSize1">31sp</dimen>
+    <dimen name="textSize2">22sp</dimen>
+    <dimen name ="textSize3">17sp</dimen>
+    <dimen name ="textSize4">20sp</dimen>
+    <dimen name="textSize5">27sp</dimen>
+    <dimen name="textSize6">18sp</dimen>
+    <dimen name="textSize7">16sp</dimen>
+
+    <dimen name="cornerRadius1">25dp</dimen>
+    <dimen name="cornerRadius2">14dp</dimen>
+
+    <dimen name ="margin1">22dp</dimen>
+    <dimen name ="margin2">107dp</dimen>
+    <dimen name ="margin3">23dp</dimen>
+    <dimen name ="margin4">5dp</dimen>
+    <dimen name ="margin5">108dp</dimen>
+    <dimen name ="margin6">17dp</dimen>
+    <dimen name ="margin7">60dp</dimen>
+    <dimen name ="margin8">45dp</dimen>
+    <dimen name ="margin9">90dp</dimen>
+    <dimen name ="margin10">30dp</dimen>
+    <dimen name ="margin11">28dp</dimen>
+    <dimen name ="margin12">27dp</dimen>
+    <dimen name ="margin13">40dp</dimen>
+    <dimen name ="margin14">31dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin16">7dp</dimen>
+    <dimen name="margin17">32dp</dimen>
+    <dimen name="margin18">20dp</dimen>
+    <dimen name="margin19">23dp</dimen>
+    <dimen name="margin20">35dp</dimen>
+    <dimen name="margin21">44dp</dimen>
+    <dimen name="margin22">26dp</dimen>
+    <dimen name="margin23">8dp</dimen>
+    <dimen name="margin24">29dp</dimen>
+    <dimen name="margin25">80dp</dimen>
+    <dimen name="margin26">48dp</dimen>
+    <dimen name="margin27">24dp</dimen>
+
+    <dimen name="in_app_card_view_height">82dp</dimen>
+    <dimen name="save_button_height">64dp</dimen>
+
+
+
+
+
+
+
+</resources>

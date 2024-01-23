@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.inapp.InAppFragment">
+
+    <ImageView
+        android:id="@+id/inappImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin7"
+        android:src="@drawable/in_app_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/getPremiumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin21"
+        android:text="@string/get_premium_text"
+        android:textAppearance="@style/titles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inappImageView" />
+
+    <TextView
+        android:id="@+id/shareTheCareTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin22"
+        android:text="@string/share_the_care_text"
+        android:textSize="@dimen/textSize7"
+        android:textAppearance="@style/symptoms_name"
+        app:layout_constraintStart_toStartOf="@+id/getPremiumTextView"
+        app:layout_constraintTop_toBottomOf="@+id/getPremiumTextView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/in_app_list_item"
+        app:layout_constraintBottom_toBottomOf="@+id/shareTheCareTV"
+        app:layout_constraintEnd_toStartOf="@+id/shareTheCareTV"
+        app:layout_constraintTop_toTopOf="@+id/shareTheCareTV" />
+
+    <TextView
+        android:id="@+id/allInOneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin23"
+        android:text="@string/all_in_one_baby_tracker_text"
+        android:textSize="@dimen/textSize7"
+        android:textAppearance="@style/symptoms_name"
+        app:layout_constraintStart_toStartOf="@+id/shareTheCareTV"
+        app:layout_constraintTop_toBottomOf="@+id/shareTheCareTV" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/in_app_list_item"
+        app:layout_constraintBottom_toBottomOf="@+id/allInOneTV"
+        app:layout_constraintEnd_toStartOf="@+id/allInOneTV"
+        app:layout_constraintTop_toTopOf="@+id/allInOneTV" />
+
+    <TextView
+        android:id="@+id/watchYourBabyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin23"
+        android:text="@string/all_in_one_baby_tracker_text"
+        android:textSize="@dimen/textSize7"
+        android:textAppearance="@style/symptoms_name"
+        app:layout_constraintStart_toStartOf="@+id/allInOneTV"
+        app:layout_constraintTop_toBottomOf="@+id/allInOneTV" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/in_app_list_item"
+        app:layout_constraintBottom_toBottomOf="@+id/watchYourBabyTV"
+        app:layout_constraintEnd_toStartOf="@+id/watchYourBabyTV"
+        app:layout_constraintTop_toTopOf="@+id/watchYourBabyTV" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/premiumButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/in_app_card_view_height"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="@dimen/margin12"
+        android:checkable="true"
+        app:strokeColor="@color/cardview_background"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/cardview_background"
+        app:cardCornerRadius="@dimen/cornerRadius1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watchYourBabyTV">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/annualText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin1"
+                android:layout_marginTop="@dimen/margin24"
+                android:layout_marginBottom="@dimen/margin22"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/inapp_annual_text"
+                android:textSize="@dimen/textSize6"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin12"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/text_color_black"
+                android:text="@string/inapp_price_text"
+                android:textSize="@dimen/textSize6"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/annualText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/annualText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/premiumStartButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/save_button_height"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="@dimen/margin25"
+        android:backgroundTint="@color/title_color"
+        android:text="@string/in_app_button_text"
+        android:textColorHighlight="@color/viewpager_color"
+        android:textAppearance="@font/poppins_bold"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/textSize4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/premiumButton" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin17"
+        android:layout_marginBottom="40dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premiumStartButton" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:background="@color/black"
+        android:layout_marginBottom="@dimen/margin18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tvPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/in_app_privacy_policy_text"
+        android:textAppearance="@style/privacy"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintEnd_toStartOf="@id/divider"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/tvRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/in_app_restore_purchase_text"
+        android:textAppearance="@style/privacy"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintEnd_toStartOf="@id/divider2"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/in_app_term_of_user"
+        android:textAppearance="@style/privacy"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/divider2"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+    <ImageView
+        android:id="@+id/closeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inapp_close_button"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
