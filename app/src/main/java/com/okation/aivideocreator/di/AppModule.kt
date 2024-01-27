@@ -26,9 +26,7 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideRepository(
-        localDataSource: BabyTrackerDao,
-    ) =
+    fun provideRepository(localDataSource: BabyTrackerDao) =
         DaoRepository(localDataSource)
 
 
