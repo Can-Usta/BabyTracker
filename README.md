@@ -7,9 +7,13 @@ In this application, MVVM, Dagger-Hilt, Room, RevenueCat, and Navigation librari
 
 - MVVM
 - Room
+- Dagger-Hilt
 - Live Data
 - Coroutines
 - Revenuecat
 
 # Screenshots
 
+<img src= "images/Screenshot_20240128_010646.png" width = "400" height ="600"> <img src= "images/Screenshot_20240128_010748.png" width = "400" height ="600">
+
+<img src= "images/Screenshot_20240128_010806.png" width = "400" height ="600"> <img src= "images/Screenshot_20240128_010941.png" width = "400" height ="600">
